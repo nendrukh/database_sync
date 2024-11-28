@@ -95,8 +95,10 @@ class DbCorrector:
 
 
 if __name__ == "__main__":
+    print("python_sync started")
     try:
         DbCorrector.sync_structure()
         DbCorrector.sync_data()
     finally:
         DbCorrector.close()
+    print("python_sync completed")
